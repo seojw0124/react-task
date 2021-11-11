@@ -15,10 +15,21 @@ function App() {
           <Navbar />
           <div className="container">
             <Switch>
-              {routes.map(route => {
+              {/*{routes.map(route => {*/}
+              {/*  return (*/}
+              {/*      <Route*/}
+              {/*          key={route.path}*/}
+              {/*          path={route.path}*/}
+              {/*          exact*/}
+              {/*      >*/}
+              {/*        <route.component />*/}
+              {/*      </Route>*/}
+              {/*  )*/}
+              {/*})}*/}
+                {routes.map((route, id) => {
                 return (
                     <Route
-                        key={route.path}
+                        key={id} //이렇게 하셔도 됩니다.
                         path={route.path}
                         exact
                     >
