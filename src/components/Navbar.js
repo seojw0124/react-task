@@ -1,5 +1,10 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
+
+ //이 부분 진행하실 때 css 파일 따로 분리해서
+// 폴더구조를 components/navigation/Navigation.js
+// 폴더구조를 components/navigation/Navigation.css로 만들어주세요
+
 export const Navbar = () => {
     return (
         <nav className="navbar navbar-expand-lg bg-white">
